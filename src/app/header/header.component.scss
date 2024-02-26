@@ -1,0 +1,62 @@
+.Tags {
+  font: 'Frank Ruhl Libre', serif;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-right: 10px;
+  opacity: 100%;
+  color: black;
+  cursor:pointer;
+}
+.container {
+  width: 100%;
+  max-width: 100%;
+  text-align: -webkit-center;
+  padding: 0;
+  margin: 0;
+  background-color: rgba(128, 128, 128, 0.5);
+  color: #000;
+}
+
+
+.highlight {
+  position: relative;
+  font-weight:600;
+}
+
+.highlight::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: black; /* You can adjust the color of the underline */
+  animation: blink 1s infinite alternate;
+}
+
+/* Define the blink animation */
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+}
+.information {
+  margin-top: -2%;
+  position: absolute;
+  margin-left: 20px;
+  cursor:pointer;
+}
+.popup {
+  width:25vw;
+  background-color: skyblue;
+  z-index: 2;
+  position: absolute;
+  top: 40%;
+  left:35%;
+  box-shadow: 0 0 5px 5px gray;
+  text-align:center;
+}

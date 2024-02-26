@@ -1,0 +1,66 @@
+
+<div *ngIf="certifications" class="fade-in-text certificationsDiv row">
+  <p>certifications</p>
+</div>
+<div *ngIf="profile" class="fade-in-text experienceDiv row">
+  <div class="col-5">
+    <img src="https://i.ibb.co/RQtnTt3/1697622261184-prev-ui.png" alt="1697622261184-prev-ui" border="0">
+  </div>
+  <div class="col-7">
+    <h1 style=" padding-left: 15%; padding-top: 15%; font-family: 'Times New Roman', serif;">Hi, I am</h1>
+    <h1 style="color: black; padding-left: 15%; ">Sheharyar Khan.</h1>
+    <h3 style="padding-left: 15%">Full Stack Software Engineer</h3>
+    <button style="margin-left: 15%" class="button-89" role="button" (click)="ContactMe()">Contact Me</button>
+  </div>
+
+ 
+
+</div>
+<div *ngIf="education" class="fade-in-text educationDiv">
+  <div class="row" style="padding:20px">
+    <div class="col-6">
+   <!--   <img style="margin:-5%;margin-top:-10%" src="assets/images/uol.png" alt="Image Of UOL" height="200" width="200">-->
+    </div>
+    <div class="col-6">
+      <h3>University of Lahore, Lahore (2018 - 2022)</h3>
+      <h5>BS COMPUTER SCIENCE (HONS)</h5>
+      <p>CGPA: 3.2</p>
+    </div>
+  </div>
+  <div class="row" style="padding:20px">
+    <div class="col-6">
+      <h3>Punjab College Burewala (2015 - 2017)</h3>
+      <h5>F.Sc(Pre-Engineering)</h5>
+      <p>Percentage :79%</p>
+    </div>
+    <div class="col-6" style="padding-left:20%">
+     <!-- <img style="margin:-5%" src="assets/images/college.png" alt="Image Of College" height="150" width="200">-->
+    </div>
+  </div>
+  <div class="row" style="padding:20px">
+    <div class="col-6">
+     <!-- <img style="margin:-5%;" src="assets/images/school.png" alt="Image Of School" height="150" width="150">-->
+    </div>
+    <div class="col-6">
+      <h3>The Educators (2013 - 2015)</h3>
+      <h5>Matric(Pre-Engineering)</h5>
+      <p>Percentage :89%</p>
+    </div>
+  </div>
+
+
+  <div style="padding-left: 3%; padding-top: 1%">
+    
+  </div>
+
+  <div style="padding-left: 62%; padding-top: 3%">
+    
+  </div>
+</div>
+
+
+<div class="divChanger">
+  <div class="roundedDiv" [ngClass]="{'bgcoloron': education === true}" (click)="GetEducation()"></div>
+  <div class="roundedDiv" [ngClass]="{'bgcoloron': profile === true}" (click)="GetProfile()"></div> 
+  <div class="roundedDiv" [ngClass]="{'bgcoloron': certifications === true}" (click)="GetCertification()"></div>
+</div>

@@ -1,0 +1,27 @@
+<div class="row rowCustomStyle" style="padding-top:20px;background-color:skyblue">
+  <div class="col-5" style="background-color: skyblue"></div>
+  <div class="col-7" style="background-color: skyblue">
+    <div class="box">
+      <i class="fas fa-quote-left fa2"></i>
+      <div class="text">
+        <i class="fas fa-quote-right fa1"></i>
+        <div>
+          <h3>Project Details</h3>
+          <p>
+            {{InformationAboutProject}}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row rowCustomStyle" style="background-color: skyblue">
+  <div class="col-6"  style=" border-left: 10px solid black; border-bottom: 10px solid black ">
+    <div style="height:10vh">
+    </div>
+    <ul style="padding-left:30px" *ngFor="let Project of Projects">
+      <li (click)="getInformationAboutProject(Project.id)" style="cursor:pointer" [ngClass]="{'boldclass': Project.id === selectedId}"><h3>{{Project.description}}</h3></li>
+    </ul>
+  </div>
+  
+</div>

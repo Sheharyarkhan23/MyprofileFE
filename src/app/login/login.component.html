@@ -1,0 +1,17 @@
+<div class="container" >
+  <div class="top"></div>
+  <div class="bottom"></div>
+  <div class="center">
+    <!--<img ngsrc="../../assets/abc.png" width="200" height="100">-->
+    <div>&nbsp;</div>
+    <p class="login-protected">Protected Page</p>
+    <div>&nbsp;</div>
+    <div class="square" style="margin-bottom:-10px">
+      <div class="text"><span>Clue!</span></div>
+    </div>
+    <div class="password-input-container">
+      <input type="{{ showPassword ? 'text' : 'password' }}" placeholder="What's the magic word."><i class={{getEyeIcon()}} (click)="togglePasswordVisibility()"></i>
+      <button style="width: 100%; padding-left: 10px; margin-left: 5px; " type="submit" (click)="submit()">Submit</button>
+    </div>
+  </div>
+</div>

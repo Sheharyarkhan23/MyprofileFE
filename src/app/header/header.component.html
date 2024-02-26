@@ -1,0 +1,16 @@
+<div class="container">
+  <span [ngClass]="{'highlight': ActiveTag === '/dashboard'}" class="Tags" (click)="onMenuclick('Home')">Home</span>
+  <span [ngClass]="{'highlight': ActiveTag === '/experience'}" class="Tags" (click)="onMenuclick('Experience')">My Career</span>
+  <span [ngClass]="{'highlight': ActiveTag === '/services'}" class="Tags" (click)="onMenuclick('Services')">Services</span>
+  <button class="Tags" [disabled]="true">Sheharyar Khan</button>
+  <span [ngClass]="{'highlight': ActiveTag === '/portfolio'}" class="Tags" (click)="onMenuclick('Portfolio')">Portfolio</span>
+  <span [ngClass]="{'highlight': ActiveTag === '/blogs'}" class="Tags" (click)="onMenuclick('My Thoughts')">My Thoughts</span>
+  <span [ngClass]="{'highlight': ActiveTag === '/contactme'}" class="Tags" (click)="onMenuclick('Contact')">Contact</span>
+</div>
+<span (click)="OpenModal()" class="information" ><i class="fa fa-info-circle" aria-hidden="true"></i></span>
+
+<div *ngIf="ShowPopUp" class="popup">
+  <h1>{{headingOfInformation}}</h1>
+  <div>{{informationAboutScreen}}</div>
+  <button class="Tags" (click)="CloseModal()">close</button>
+</div>
