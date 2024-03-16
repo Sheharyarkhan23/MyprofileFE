@@ -21,6 +21,9 @@ yarn-error.log
 *.sublime-workspace
 
 # Visual Studio Code
+.vs/*
+!.vs/slnx.sqlite
+!.vs/VSWorkspaceState
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
@@ -421,6 +424,8 @@ MigrationBackup/
 FodyWeavers.xsd
 
 # VS Code files for those working on multiple tools
+.vs/*
+
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
