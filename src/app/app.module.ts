@@ -15,12 +15,15 @@ import { HttpClientModule } from '@angular/common/http';
 import { CheckPermissionToWriteBlogComponent } from './check-permission-to-write-blog/check-permission-to-write-blog.component';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { FormControl, ReactiveFormsModule, FormGroup } from '@angular/forms';
+import { GoogleMapsModule } from '@angular/google-maps'
 @NgModule({
   declarations: [
     AppComponent,
     StartingScreenComponent,
     FooterComponent,
-    HeaderComponent, InformationComponent, CheckPermissionToWriteBlogComponent
+    HeaderComponent,
+    InformationComponent,
+    CheckPermissionToWriteBlogComponent
   ],
   imports: [
     BrowserModule,
@@ -30,7 +33,7 @@ import { FormControl, ReactiveFormsModule, FormGroup } from '@angular/forms';
     MatButtonModule,
     HttpClientModule,
     MatInputModule,
-
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

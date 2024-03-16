@@ -19,7 +19,18 @@ export class ContactmeComponent implements OnInit {
 
   ngOnInit() {
   }
-
+  center: google.maps.LatLngLiteral = {
+    lat: 31.4659, 
+    lng: 74.2232 
+  };
+  zoom = 12; 
+  markerOptions: google.maps.MarkerOptions = {
+    draggable: true
+  };
+  markerPositions: google.maps.LatLngLiteral[] = [];
+  addMarker(event: google.maps.MapMouseEvent) {
+    if (event.latLng != null) this.markerPositions.push(event.latLng.toJSON());
+  }
 
   onSubmit() {
    

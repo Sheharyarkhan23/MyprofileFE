@@ -39,8 +39,10 @@ body {
     width: 100%;
     height: 100%;
     background: transparent;
-    border-top: 20px solid #fff;
-    border-left: 20px solid #fff;
+    border: 2px solid;
+    border-image: linear-gradient(to right, #d9534f, #ffffff);
+    border-image-slice: 1;
+    padding: 20px; /* Optional: Add padding to see the effect */
     box-sizing: border-box;
   }
 
@@ -51,8 +53,8 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    border-bottom: 20px solid #b71540;
-    border-right: 20px solid #b71540;
+    border-bottom: 20px solid orangered;
+    border-right: 20px solid orangered;
     box-sizing: border-box;
   }
 
@@ -130,4 +132,7 @@ body {
 
 .boldclass{
     color:red;
+}
+.simpleclass {
+  color: white;
 }

@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { FormControl, ReactiveFormsModule,FormGroup } from '@angular/forms';
 import { ContactmeRoutingModule } from './contactme-routing.module';
 import { ContactmeComponent } from './contactme.component';
-
+import { GoogleMapsModule } from '@angular/google-maps'
 
 @NgModule({
   declarations: [
@@ -12,7 +12,8 @@ import { ContactmeComponent } from './contactme.component';
   imports: [
     CommonModule,
     ReactiveFormsModule,
-    ContactmeRoutingModule
+    ContactmeRoutingModule,
+    GoogleMapsModule
   ]
 })
 export class ContactmeModule { }

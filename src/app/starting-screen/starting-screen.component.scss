@@ -1,6 +1,7 @@
 
 .box1 {
-  background-color: #134F5C;
+  background-color: #1c1c1c;
+  color:white;
   height: 50vh;
   width: 100%;
   opacity: 70%;
@@ -8,11 +9,13 @@
   text-align: center;}
 .box2 {
   background-color: #F08030;
+  color: white;
   height: 50vh;
   width: 100%;
   opacity: 70%;
   padding: 10% 0;
-  text-align: center;}
+  text-align: center;
+}
 
 .box1:hover {
   background: #134F5C;
